@@ -4,11 +4,15 @@ let currentRoundNumber = 1;
 
 // Write your code below:
 
+//generateTarget function
+//generate random number 0-9
+
 const generateTarget = () => {
     return Math.floor(Math.random() * 9);
   }
   
   
+  //compareGuesses function determine which guess is closest to target
   
   const compareGuesses = (humanGuess, computerGuess, target) => {
   
@@ -27,6 +31,8 @@ const generateTarget = () => {
   
     }
   }
+
+  //updateScore function increase winners score after each round
   
   const updateScore = winner => {
     if(winner === "human"){
@@ -39,6 +45,7 @@ const generateTarget = () => {
     }
   }
   
+  //advanceRound function update the round number
   
   const advanceRound = () => {
   
